@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potofolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+            padding-top: 20px;
+            color: black;
+        }
+        nav a:hover{
+            border-bottom: 3px solid rgb(229, 204, 253);
+        }
+        nav{
+            padding: 20px;
+        }
+        @media(max-width: 740px){
+            header{
+                width: 740px;
+                
+            }
+        }
+        .logo{
+            margin-left: 20px;
+            background-color: rgb(202, 193, 211);
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .main{
+            display: flex;
+            margin: 20px;
+        }
+        .text h1{
+            font-size: 50px;
+            animation-name: shrink;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        span{
+            color: rgb(108, 2, 207);
+        }
+        .text p{
+            width: 350px;
+            animation-name: shrink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes shrink{
+           100%{transform: scale(0.90, 0.90);}
+        }
+    
+        .hire{
+            color: rgb(239, 228, 228);
+            background-color: rgb(93, 1, 179);
+            padding: 10px;
+        }
+        .view{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+        .image img{
+            width: 350px;
+            height: 850px;
+        }
+            
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo">A.F</div>
+       <nav>
+        <a href="">ABOUT</a>
+        <a href="">SERVOCE</a>
+        <a href="">WORKS</a>
+        <a href="">CONTACT</a>
+       </nav>
+    </header>
+    <div class="main">
+        <div class="text">
+            <h1>Hello, I'm <span>Charmraeun</span>, a WEb Developer <span>Full Stack.</span></h1>
+            <p>I learn alot of web tools and combo it with AI that can faster in style or set beutiful styels. Not just use AI but  have understand all position all meaning of program , i just AI to improve or make work fast</p>
+            <div class="button">
+                <button class="hire">HIRE ME</button>
+                <button class="view">VIEW WORK</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="sticker.webp">
+        </div>
+
+    </div>
+</body>
+</html>
