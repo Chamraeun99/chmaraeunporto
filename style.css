@@ -1,0 +1,212 @@
+ *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+           
+        }
+        nav a{
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+            padding-top: 20px;
+            color: black;
+        }
+        nav a:hover{
+            border-bottom: 3px solid rgb(229, 204, 253);
+        }
+        nav{
+            padding: 20px;
+        }
+        @media(max-width: 740px){
+            header{
+                width: 740px;
+                
+            }
+            .about-container{
+                width: 740px;
+            }
+            .medai-task{
+                margin: 5px;
+                font-size: 10px;
+            }
+            .about-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 740px;
+                flex-wrap: wrap;
+            }
+            .about-photo img{
+                margin-top: 20px;
+                border-radius: 20px;
+                box-shadow:  0px 1px 10px greenyellow;
+            }
+            .about-medai{
+                width: 500px;
+                padding: 0;
+                display: flex;
+                margin-left: 0px;
+                width: 100%;
+                height: 100%;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+            }
+            .about-text{
+                flex: 1;
+                min-width: 500px;
+                justify-content: center;
+            }
+            .about-text p{
+                text-align: center;
+            }
+            .about-text h3{
+                font-size: 15px;
+                text-align: center
+            }
+            .about-text h1{
+                text-align: center;
+            }
+            .number{
+                font-size: 10px;
+            }
+        }
+        .logo{
+            margin-left: 20px;
+            background-color: rgb(202, 193, 211);
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .main{
+            display: flex;
+            margin: 20px;
+        }
+        .text h1{
+            font-size: 50px;
+            animation-name: shrink;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        span{
+            color: rgb(108, 2, 207);
+        }
+        .text p{
+            width: 350px;
+            animation-name: shrink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes shrink{
+           100%{transform: scale(0.90, 0.90);}
+        }
+    
+        .hire{
+            color: rgb(239, 228, 228);
+            background-color: rgb(93, 1, 179);
+            padding: 10px;
+        }
+        .view{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+        .image img{
+            width: 350px;
+            height: 850px;
+        }
+
+
+        .about-container{
+            background-color: hwb(120 94% 4%);
+
+
+        }
+        .about-details{
+            display: flex;
+        }
+        .space{
+            flex: 1;
+        }
+        .about-photo{
+            flex: 1;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+           
+        .about-text{
+            flex: 1;
+            width: 200px;
+        
+        }
+        .about-text p{
+            color: gray;
+        }
+
+        .about-medai{
+            display: flex;
+        }
+        .medai-task{
+            margin: 30px;
+        }
+        .medai{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0;
+        }
+        label{
+            font-weight: bold;
+        }
+        .about-text span{
+            color: brown;
+            border-bottom: 3px solid rgb(205, 165, 205);
+        }
+        .about-text h1{
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        .about-footer-dashboard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-footer{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 20px hwb(0 76% 19%);
+            border-radius: 10px;
+            width: 1050px;
+            min-height: auto;
+        }
+        .number{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .number h2{
+            margin-bottom: 0px;
+        }
+
+        
