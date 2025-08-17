@@ -63,53 +63,33 @@
                 margin: 0;
                 padding: 1px;
             }
-            
-            .about-container{
-                width: 576px;
-            }
-            .medai-task{
-                margin: 5px;
+            .about-text p{
                 font-size: 10px;
             }
-            .about-details{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 740px;
-                flex-wrap: wrap;
+            .about-text label{
+               font-size: 10px;
             }
-            .about-photo img{
-                margin-top: 20px;
-                border-radius: 20px;
-                box-shadow:  0px 1px 10px greenyellow;
+            .about-details {
+                flex-direction: column;
+                gap: 10px;
             }
             .about-medai{
-                width: 500px;
-                padding: 0;
-                display: flex;
-                margin-left: 0px;
                 width: 100%;
-                height: 100%;
-                flex: 1;
+
+            }
+            .about-medai .medai-task{
+                width: 400px;
+                height:auto;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                
             }
-            .about-text{
-                flex: 1;
-                min-width: 500px;
-                justify-content: center;
+
+            .about-footer {
+                flex-direction: column;
+                gap: 15px;
             }
-            .about-text p{
-                text-align: center;
-            }
-            .about-text h3{
-                font-size: 15px;
-                text-align: center
-            }
-            .about-text h1{
-                text-align: center;
-            }
+           
             .number{
                 font-size: 10px;
             }
@@ -182,83 +162,79 @@
 
 
         .about-container{
-            background-color: hwb(120 94% 4%);
-            margin: 0 auto; 
+            padding: 40px 30px;
+            max-width: 1200px;
+            margin: auto; 
+            background-color: #007bff;
 
 
         }
-        .about-details{
+       .about-details {
             display: flex;
-        }
+            gap: 30px;
+            flex-wrap: wrap; /* allow wrapping on small screens */
+            align-items: flex-start;
+        }   
         .space{
             flex: 1;
         }
-        .about-photo{
-            flex: 1;
-            margin-left: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-           
-        .about-text{
-            flex: 1;
-            width: 200px;
-        
-        }
-        .about-text p{
-            color: gray;
+        .about-photo img {
+            width: 300px;
+            max-width: 100%;
+            border-radius: 10px;
         }
 
-        .about-medai{
-            display: flex;
+           
+        .about-text {
+            flex: 1;
+            min-width: 250px;
         }
-        .medai-task{
-            margin: 30px;
-        }
-        .medai{
+        .about-medai {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        
+        }
+
+        .medai-task {
+            flex: 1;
+            min-width: 200px;
+            
+        }
+
+        .medai {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 10px;
             align-items: center;
-            gap: 10px;
-            padding: 0;
         }
-        label{
+
+        .medai label {
             font-weight: bold;
         }
-        .about-text span{
-            color: brown;
-            border-bottom: 3px solid rgb(205, 165, 205);
+
+        /* Footer dashboard */
+        .about-footer-dashboard {
+            margin-top: 50px;
         }
-        .about-text h1{
-            padding-bottom: 0;
-            margin-bottom: 0;
-            margin-top: 20px;
-        }
-        .about-footer-dashboard{
+
+        .about-footer {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
         }
-        .about-footer{
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0px 0px 20px hwb(0 76% 19%);
+
+        .number {
+            flex: 1;
+            min-width: 150px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
             border-radius: 10px;
-            width: 1050px;
-            min-height: auto;
         }
-        .number{
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .number h2{
-            margin-bottom: 0px;
-        }
+
 
         .contact-section{
             padding: 20px 10px;
